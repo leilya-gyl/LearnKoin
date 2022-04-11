@@ -10,7 +10,7 @@ import org.koin.android.ext.android.inject
 class MainActivity : AppCompatActivity() {
 
     // Lazy injected MySimplePresenter
-    val firstPresenter: MySimplePresenter by inject()
+    private val firstPresenter: MySimplePresenter by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
