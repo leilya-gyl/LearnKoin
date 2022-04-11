@@ -11,7 +11,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class MyViewModelActivity : AppCompatActivity() {
 
     // lazy Inject ViewModel
-    val myViewModel : MyViewModel by viewModel()
+    private val myViewModel : MyViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
